@@ -7,17 +7,21 @@
 /**
  * Test a string to be generic `string`
  * @typeParam StringType - The string to test
+ * @typeParam Yes - The type to return in case the test is positive
+ * @typeParam No - The type to return  in case the test is negative
  */
 export type IfGenericString<
   StringType extends string,
   Yes = StringType,
   No = never
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
 > = StringType extends `${any}` ? No : Yes;
 
 /**
  * Test a string that represents a number
  * @typeParam StringType - The string to test
+ * @typeParam Yes - The type to return in case the test is positive
+ * @typeParam No - The type to return  in case the test is negative
  */
 export type IfNumberString<
   StringType extends string,
@@ -28,6 +32,8 @@ export type IfNumberString<
 /**
  * Test a string that represents a bigint
  * @typeParam StringType - The string to test
+ * @typeParam Yes - The type to return in case the test is positive
+ * @typeParam No - The type to return  in case the test is negative
  */
 export type IfBigIntString<
   StringType extends string,
@@ -38,6 +44,8 @@ export type IfBigIntString<
 /**
  * Test a string that represents a boolean
  * @typeParam StringType - The string to test
+ * @typeParam Yes - The type to return in case the test is positive
+ * @typeParam No - The type to return  in case the test is negative
  */
 export type IfBooleanString<
   StringType extends string,
@@ -48,6 +56,8 @@ export type IfBooleanString<
 /**
  * Test a string that represents null
  * @typeParam StringType - The string to test
+ * @typeParam Yes - The type to return in case the test is positive
+ * @typeParam No - The type to return  in case the test is negative
  */
 export type IfNullString<
   StringType extends string,
@@ -58,6 +68,8 @@ export type IfNullString<
 /**
  * Test a string that represents undefined
  * @typeParam StringType - The string to test
+ * @typeParam Yes - The type to return in case the test is positive
+ * @typeParam No - The type to return  in case the test is negative
  */
 export type IfUndefinedString<
   StringType extends string,
@@ -73,6 +85,8 @@ export type Whitespace = " " | "\t" | "\r" | "\n" | "\v" | "\f";
 /**
  * Test a string that represents undefined
  * @typeParam StringType - The string to test
+ * @typeParam Yes - The type to return in case the test is positive
+ * @typeParam No - The type to return  in case the test is negative
  */
 export type IfWhitespaceString<
   StringType extends string,
@@ -83,6 +97,8 @@ export type IfWhitespaceString<
 /**
  * Test a string to be empty
  * @typeParam StringType - The string to test
+ * @typeParam Yes - The type to return in case the test is positive
+ * @typeParam No - The type to return  in case the test is negative
  */
 export type IfEmptyString<
   StringType extends string,
@@ -93,6 +109,8 @@ export type IfEmptyString<
 /**
  * Test a string to be not empty
  * @typeParam StringType - The string to test
+ * @typeParam Yes - The type to return in case the test is positive
+ * @typeParam No - The type to return  in case the test is negative
  */
 export type IfNotEmptyString<
   StringType extends string,
