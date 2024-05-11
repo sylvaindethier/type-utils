@@ -1,33 +1,76 @@
 /**
- * Returns the string if not empty, `never` otherwise
- * @typeParam S - The string to compare with not empty string
+ * Each Type function has for least types:
+ * @typeParam Yes - The type to return in case the test is positive
+ * @typeParam No - The type to return  in case the test is negative
  */
-export type NotEmptyString<S extends string> = S extends `${infer Head}${infer Tail}`
-  ? `${Head}${Tail}`
-  : never;
 
 /**
- * Checks if a string is not empty
- * @typeParam S - The string to compare with not empty string
+ * Test a string that represents a number
+ * @typeParam S - The string to test
  */
-export type IsNotEmptyString<S extends string> = NotEmptyString<S> extends never ? false : true;
+export type NumberString<S extends string, Yes = S, No = never> = S extends `${number}` ? Yes : No;
 
 /**
- * Returns the string if empty
- * @typeParam S - The string to compare with empty string
+ * Test a string that represents a bigint
+ * @typeParam S - The string to test
  */
-export type EmptyString<S extends string> = NotEmptyString<S> | "";
+export type BigIntString<S extends string, Yes = S, No = never> = S extends `${number}n` ? Yes : No;
 
 /**
- * Checks if a string is empty
- * @typeParam S - The string to compare with empty string
+ * Test a string that represents a boolean
+ * @typeParam S - The string to test
  */
-export type IsEmptyString<S extends string> = IsNotEmptyString<S> extends true ? false : true;
+export type BooleanString<S extends string, Yes = S, No = never> = S extends `${boolean}`
+  ? Yes
+  : No;
+
+/**
+ * Test a string that represents null
+ * @typeParam S - The string to test
+ */
+export type NullString<S extends string, Yes = S, No = never> = S extends `${null}` ? Yes : No;
+
+/**
+ * Test a string that represents undefined
+ * @typeParam S - The string to test
+ */
+export type UndefinedString<S extends string, Yes = S, No = never> = S extends `${undefined}`
+  ? Yes
+  : No;
+
+/**
+ * Test a string to not be generic `string`
+ * @typeParam S - The string to test
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type NotString<S extends string, Yes = S, No = never> = S extends `${any}` ? Yes : No;
 
 /**
  * Represents any whitespace character
  */
 export type Whitespace = " " | "\t" | "\r" | "\n" | "\v" | "\f";
+
+/**
+ * Test a string that represents undefined
+ * @typeParam S - The string to test
+ */
+export type WhitespaceString<S extends string, Yes = S, No = never> = S extends `${Whitespace}`
+  ? Yes
+  : No;
+
+/**
+ * Test a string to be empty
+ * @typeParam S - The string to test
+ */
+export type EmptyString<S extends string, Yes = S, No = never> = S extends "" ? Yes : No;
+
+/**
+ * Test a string to be not empty
+ * @typeParam S - The string to test
+ */
+export type NotEmptyString<S extends string, Yes = S, No = never> = EmptyString<S> extends never
+  ? Yes
+  : No;
 
 /**
  * Trim a string from its end
