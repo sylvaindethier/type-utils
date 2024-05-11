@@ -1,10 +1,4 @@
 /**
- * Each type test function has for least types arguments:
- * @typeParam Yes - The type to return in case the test is positive
- * @typeParam No - The type to return  in case the test is negative
- */
-
-/**
  * Test a string to be generic `string`
  * @typeParam StringType - The string to test
  * @typeParam Yes - The type to return in case the test is positive
