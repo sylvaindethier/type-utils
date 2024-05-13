@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    /* Modules */
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+    "paths": {
+      "#types/*": ["./src/types/*"]
+    },
+
+    /* Emit */
+    "declaration": true,
+    "newLine": "LF",
+    "noEmit": true,
+
+    /* Interop Constraints */
+    "allowSyntheticDefaultImports": false,
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
+
+    /* Language & Environment */
+    "target": "ES2021", // Node 16
+
+    /* Completeness */
+    "skipLibCheck": false, // Ensure .d.ts files are checked
+
+    /* Type Checking */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true, // default from https://www.totaltypescript.com/tsconfig-cheat-sheet
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    // default from https://github.com/tsconfig/bases/blob/main/bases/strictest.json //
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules"]
+}

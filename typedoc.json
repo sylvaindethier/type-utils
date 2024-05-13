@@ -1,0 +1,18 @@
+{
+  "$schema": "https://typedoc-plugin-markdown.org/schema.json",
+  "plugin": ["typedoc-plugin-markdown"],
+  "entryPoints": ["./src/index.d.ts"],
+  "out": "./docs",
+  "mergeReadme": false,
+  // "membersWithOwnFile": ["Interface", "TypeAlias"],
+  "outputFileStrategy": "members",
+  "excludeGroups": true,
+  "useCodeBlocks": true,
+  "expandParameters": true,
+  "parametersFormat": "list", // "table"
+  "propertiesFormat": "list", // "table"
+  "enumMembersFormat": "list", // "table"
+  "typeDeclarationFormat": "list", // "table"
+  "indexFormat": "list" // "table"
+  // "publicPath": "undefined" // base path for all URLs
+}

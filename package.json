@@ -1,0 +1,83 @@
+{
+  "name": "@sdt/typescript-utils",
+  "description": "TypeScript typesafe utilities completely tested",
+  "keywords": [
+    "TypeScript",
+    "TS",
+    "types",
+    "typesafe",
+    "type-safe",
+    "utility",
+    "util",
+    "utilities",
+    "util",
+    "tools"
+  ],
+  "author": "Sylvain Dethier",
+  "contributors": [],
+  "version": "0.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/sylvaindethier/typescript-utils#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sylvaindethier/typescript-utils"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./src/types/index.d.ts",
+    "./types/*": "./src/types/*"
+  },
+  "imports": {
+    "#types/*": "./src/types/*"
+  },
+  "types": "./src/types/index.d.ts",
+  "files": [
+    "src/types/**/*",
+    "src/types/index.d.ts"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc && npm run build:doc",
+    "build:doc": "typedoc",
+    "postbuild": "echo 'You may describe the change. Run `npm run changes`\nTo release the package run `npm run release`'",
+    "changes": "npx changeset add",
+    "prepublishOnly": "npm run pretty && npm run build",
+    "prerelease": "npm run test:source-file-extension && npm run test",
+    "release": "npx changeset && npx changeset status && npx changeset version && npx changeset publish && git push --follow-tags",
+    "test:source-file-extension": "node script/file-extension.mjs",
+    "test": "tsc && vitest run",
+    "test:watch": "tsc && vitest",
+    "test:ui": "vitest run --ui",
+    "coverage": "vitest run --coverage",
+    "pretty": "prettier --write \"src/**/*.{ts}\""
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.11",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "@vitest/ui": "^1.6.0",
+    "eslint": "8.57.0",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "eslint-plugin-vitest": "^0.5.4",
+    "jsdom": "^24.0.0",
+    "prettier": "^2.8.8",
+    "typedoc": "^0.25.13",
+    "typedoc-plugin-markdown": "^4.0.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-eslint": "^1.8.1",
+    "vitest": "^1.6.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
