@@ -1,7 +1,7 @@
 {
   "$schema": "https://typedoc-plugin-markdown.org/schema.json",
   "plugin": ["typedoc-plugin-markdown"],
-  "entryPoints": ["./src/index.d.ts"],
+  "entryPoints": ["./src/types/index.d.ts"],
   "out": "./docs",
   "mergeReadme": false,
   // "membersWithOwnFile": ["Interface", "TypeAlias"],
@@ -14,5 +14,4 @@
   "enumMembersFormat": "list", // "table"
   "typeDeclarationFormat": "list", // "table"
   "indexFormat": "list" // "table"
-  // "publicPath": "undefined" // base path for all URLs
 }
