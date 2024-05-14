@@ -1,7 +1,7 @@
 {
   "$schema": "https://typedoc-plugin-markdown.org/schema.json",
   "plugin": ["typedoc-plugin-markdown"],
-  "entryPoints": ["./src/types/index.d.ts"],
+  "entryPoints": ["./types/index.d.ts"],
   "out": "./docs",
   "mergeReadme": false,
   // "membersWithOwnFile": ["Interface", "TypeAlias"],

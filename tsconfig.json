@@ -7,7 +7,7 @@
     "resolvePackageJsonExports": true,
     "resolvePackageJsonImports": true,
     "paths": {
-      "#types/*": ["./src/types/*"]
+      "#types/*": ["./types/*"]
     },
 
     /* Emit */
@@ -46,6 +46,6 @@
     "noPropertyAccessFromIndexSignature": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"],
+  "include": ["types", "tests"],
   "exclude": ["node_modules"]
 }

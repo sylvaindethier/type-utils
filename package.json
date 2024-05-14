@@ -27,32 +27,31 @@
   },
   "type": "module",
   "exports": {
-    ".": "./src/types/index.d.ts",
-    "./types/*": "./src/types/*"
+    ".": "./types/index.d.ts",
+    "./types/*": "./types/*"
   },
   "imports": {
-    "#types/*": "./src/types/*"
+    "#types/*": "./types/*"
   },
-  "types": "./src/types/index.d.ts",
+  "types": "./types/index.d.ts",
   "files": [
-    "src/types/**/*",
-    "src/types/index.d.ts"
+    "types/**/*"
   ],
   "sideEffects": false,
   "scripts": {
+    "prebuild": "npm run pretty",
+    "pretty": "prettier --write \"{types,tests}/**/*.ts\"",
     "build": "npm run build:doc",
     "build:doc": "typedoc",
     "postbuild": "echo 'Describe the changes: `npm run changes`\nRelease the package: `npm run release`'",
     "changes": "npx changeset add",
-    "prepublishOnly": "npm run pretty && npm run build",
     "prerelease": "npm run test",
     "release": "npx changeset && npx changeset status && npx changeset version && npx changeset publish && git push --follow-tags",
-    "pretest": "node script/file-extension.mjs",
+    "pretest": "node scripts/file-extension.mjs",
     "test": "tsc & vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest run --ui",
-    "coverage": "vitest run --coverage",
-    "pretty": "prettier --write \"src/**/*.{ts}\""
+    "coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",

@@ -21,7 +21,7 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
     // testTransformMode: { ssr: ["/.ts$/"] },
-    include: ["src/spec/**"],
+    include: ["tests/**"],
     // exclude: [
     //   ...configDefaults.exclude,
     // ],
@@ -29,13 +29,13 @@ export default defineConfig({
     reporters: env.GITHUB_ACTIONS ? [...reporters, "github-actions"] : reporters,
     typecheck: {
       enabled: true,
-      // only: true,
+      only: true,
     },
 
     coverage: {
       // enabled: true,
-      include: ["src/types/**"],
-      // extension: [".d.ts", ".test-d.ts", ".spec-d.ts"],
+      include: ["types/**"],
+      // extension: [".d.ts"],
       // exclude: [
       //   "index.d.ts",
       //   ...coverageConfigDefaults.exclude,

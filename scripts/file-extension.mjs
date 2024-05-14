@@ -36,8 +36,8 @@ async function checkDirFilesExtensions(dir, extensions) {
 }
 
 const hasError =
-  (await checkDirFilesExtensions("src/types", ".d.ts")) ||
-  (await checkDirFilesExtensions("src/spec", [".spec-d.ts", ".test-d.ts"]));
+  (await checkDirFilesExtensions("types", ".d.ts")) ||
+  (await checkDirFilesExtensions("tests", [".spec-d.ts", ".test-d.ts"]));
 if (hasError) {
   process.exitCode = 1;
 }
