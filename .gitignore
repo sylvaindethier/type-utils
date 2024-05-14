@@ -10,6 +10,9 @@ lerna-debug.log*
 # Coverage
 coverage*
 
+# Docs # build with GitHub Actions workflows
+docs
+
 # Dependency directories
 node_modules/
 jspm_packages/
