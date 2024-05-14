@@ -6,5 +6,5 @@
 
 - [IfAny](type-aliases/IfAny.md)
 - [IfNever](type-aliases/IfNever.md)
-- [IsNever](type-aliases/IsNever.md)
-- [IsNever\_](type-aliases/IsNever-1.md)
+- [IfNot\_NeverOrAny](type-aliases/IfNot_NeverOrAny.md)
+- [IfUnknown](type-aliases/IfUnknown.md)
