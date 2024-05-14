@@ -29,7 +29,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm clean-install
+      - run: npm install
       - run: npm run test
 
   test-typescript:
@@ -49,6 +49,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-      - run: npm clean-install
+      - run: npm install
       - run: npm install -D typescript@${{ matrix.typescript-version }}
       - run: npm run test
