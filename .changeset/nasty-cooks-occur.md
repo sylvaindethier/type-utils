@@ -1,5 +1,0 @@
----
-"@sdt/typescript-utils": minor
----
-
-??
