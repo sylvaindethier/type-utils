@@ -28,4 +28,4 @@ The type to return in case the test is negative
 
 ## Source
 
-[primitives/IfAny.d.ts:7](https://github.com/sylvaindethier/typescript-utils/blob/5d7e70bdb051f6b560ec7c4f6d01c394a4b286ab/src/types/primitives/IfAny.d.ts#L7)
+[primitives/IfAny.d.ts:7](https://github.com/sylvaindethier/typescript-utils/blob/e7680a30b103160906023901bec4d9bbf09f1e74/src/types/primitives/IfAny.d.ts#L7)
