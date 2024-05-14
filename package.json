@@ -1,10 +1,12 @@
 {
   "name": "@sdt/typescript-utils",
   "description": "TypeScript type safe utilities completely tested",
+  "description": "TypeScript type safe utilities completely tested",
   "keywords": [
     "TypeScript",
     "TS",
     "types",
+    "type safe",
     "type safe",
     "type-safe",
     "utility",
@@ -41,14 +43,17 @@
   "sideEffects": false,
   "scripts": {
     "build": "npm run build:doc",
+    "build": "npm run build:doc",
     "build:doc": "typedoc",
+    "postbuild": "echo 'Describe the changes: `npm run changes`\nRelease the package: `npm run release`'",
     "postbuild": "echo 'Describe the changes: `npm run changes`\nRelease the package: `npm run release`'",
     "changes": "npx changeset add",
     "prepublishOnly": "npm run pretty && npm run build",
     "prerelease": "npm run test",
+    "prerelease": "npm run test",
     "release": "npx changeset && npx changeset status && npx changeset version && npx changeset publish && git push --follow-tags",
     "pretest": "node script/file-extension.mjs",
-    "test": "vitest run",
+    "test": "tsc & vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest run --ui",
     "coverage": "vitest run --coverage",
@@ -73,9 +78,6 @@
     "vite": "^5.2.11",
     "vite-plugin-eslint": "^1.8.1",
     "vitest": "^1.6.0"
-  },
-  "peerDependencies": {
-    "typescript": "^5.1.0"
   },
   "engines": {
     "node": ">=16.0.0"
