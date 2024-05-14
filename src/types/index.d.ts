@@ -14,5 +14,5 @@ export type * from "./primitives/IfAny.d.ts";
 // String
 
 // Utilities
-export type * from "./utils/Prettify.d.ts";
-export type * from "./utils/Refine.d.ts";
+// export type * from "./utils/Prettify.d.ts";
+// export type * from "./utils/Refine.d.ts";
