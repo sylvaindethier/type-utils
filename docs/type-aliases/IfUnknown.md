@@ -28,4 +28,4 @@ The type to return in case the test is negative
 
 ## Source
 
-[primitives/IfUnknown.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/aa5b6783699ae6338b916b5e8e393978eeb43abb/types/primitives/IfUnknown.d.ts#L9)
+[primitives/IfUnknown.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/edc656b23be8c3f01c4f75ed76a05aa613f4dd0c/types/primitives/IfUnknown.d.ts#L9)

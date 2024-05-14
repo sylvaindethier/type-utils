@@ -28,4 +28,4 @@ The type to return in case the test is negative
 
 ## Source
 
-[primitives/IfNot\_NeverOrAny.d.ts:10](https://github.com/sylvaindethier/typescript-utils/blob/aa5b6783699ae6338b916b5e8e393978eeb43abb/types/primitives/IfNot_NeverOrAny.d.ts#L10)
+[primitives/IfNot\_NeverOrAny.d.ts:10](https://github.com/sylvaindethier/typescript-utils/blob/edc656b23be8c3f01c4f75ed76a05aa613f4dd0c/types/primitives/IfNot_NeverOrAny.d.ts#L10)
