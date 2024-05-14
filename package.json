@@ -42,7 +42,7 @@
     "prebuild": "npm run pretty",
     "pretty": "prettier --write \"{types,tests}/**/*.ts\"",
     "build": "npm run build:doc",
-    "build:doc": "typedoc",
+    "build:doc": "typedoc && git add ./docs && git commit -m \"🤖: update build\"",
     "postbuild": "echo 'Describe the changes: `npm run changes`\nRelease the package: `npm run release`'",
     "changes": "npx changeset add",
     "prerelease": "npm run test",
