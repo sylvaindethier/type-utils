@@ -13,6 +13,8 @@ coverage*
 # # Docs # build with GitHub Actions workflows
 # docs
 
+src.backup
+
 # Dependency directories
 node_modules/
 jspm_packages/
