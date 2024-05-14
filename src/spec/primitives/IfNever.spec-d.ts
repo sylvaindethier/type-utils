@@ -1,5 +1,5 @@
 import { expectTypeOf } from "vitest";
-import type { IfNever } from "../../types/primitives/IfNever.d.ts";
+import type { IfNever } from "#types/primitives/IfNever";
 
 describe("IfNever type function", () => {
   // Prevents false positive, and true negative
@@ -38,11 +38,6 @@ describe("IfNever type function", () => {
     expectTypeOf<Test<Actual>>().toEqualTypeOf<FALSE>();
   });
 
-  test("with `string` type", () => {
-    type Actual = string;
-    expectTypeOf<Test<Actual>>().toEqualTypeOf<FALSE>();
-  });
-
   test("with `number` type", () => {
     type Actual = number;
     expectTypeOf<Test<Actual>>().toEqualTypeOf<FALSE>();
@@ -50,6 +45,11 @@ describe("IfNever type function", () => {
 
   test("with `bigint` type", () => {
     type Actual = bigint;
+    expectTypeOf<Test<Actual>>().toEqualTypeOf<FALSE>();
+  });
+
+  test("with `string` type", () => {
+    type Actual = string;
     expectTypeOf<Test<Actual>>().toEqualTypeOf<FALSE>();
   });
 

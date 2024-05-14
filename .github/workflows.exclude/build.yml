@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   build-update:
-    name: build update
+    name: Update build
     # concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
     steps:
@@ -21,4 +21,4 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: git add .
-      - run: git commit -m "🤖: update build"
+      - run: git commit -m "🤖: update docs"

@@ -1,11 +1,13 @@
-/// <reference types="vite/client" />
-
 import { defineConfig } from "vite";
-import { configDefaults, coverageConfigDefaults } from "vitest/config";
+// import {
+//   configDefaults,
+//   coverageConfigDefaults,
+// } from "vitest/config";
 import eslint from "vite-plugin-eslint";
+
+// Allow using conditional reporters
 import type { InlineConfig } from "vitest";
 import { env } from "node:process";
-
 const reporters: InlineConfig["reporters"] = ["default"];
 
 export default defineConfig({
@@ -18,21 +20,26 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     globals: true,
-    testTransformMode: { ssr: ["/.ts$/"] },
-    include: ["**/src/spec/**"],
-    exclude: [...configDefaults.exclude, "**/*.d.ts", "**/script/**"],
+    // testTransformMode: { ssr: ["/.ts$/"] },
+    include: ["src/spec/**"],
+    // exclude: [
+    //   ...configDefaults.exclude,
+    // ],
 
     reporters: env.GITHUB_ACTIONS ? [...reporters, "github-actions"] : reporters,
     typecheck: {
       enabled: true,
-      only: true,
+      // only: true,
     },
 
     coverage: {
-      enabled: true,
-      include: ["**/src/spec/**"],
-      extension: [".d.ts", ".test-d.ts", ".spec-d.ts"],
-      exclude: [...coverageConfigDefaults.exclude, "**/index.d.ts", "**/script/**"],
+      // enabled: true,
+      include: ["src/types/**"],
+      // extension: [".d.ts", ".test-d.ts", ".spec-d.ts"],
+      // exclude: [
+      //   "index.d.ts",
+      //   ...coverageConfigDefaults.exclude,
+      // ],
     },
   },
 });
