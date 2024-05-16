@@ -13,13 +13,13 @@ export type IfBoolean<T, Then = true, Else = false> = IfNotAnyOrNever<
 >;
 
 /**
- * Test a boolean type to be literal, whether `true` or `false`
- * @typeParam B - The boolean type to test against `boolean` literal
+ * Test a `boolean` to be literal, whether `true` or `false`
+ * @typeParam V - The boolean to test against `boolean` literal
  * @typeParam Then - The type to return in case the condition is true
  * @typeParam Else - The type to return in case the condition is false
  */
-export type IfBooleanLiteral<B extends boolean, Then = true, Else = false> = IfBoolean<
-  B,
-  boolean extends B ? Else : Then,
+export type IfBooleanLiteral<V extends boolean, Then = true, Else = false> = IfBoolean<
+  V,
+  boolean extends V ? Else : Then,
   Else
 >;
