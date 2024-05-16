@@ -1,6 +1,6 @@
 import { expectTypeOf } from "vitest";
-import type { IfNotAnyOrNever } from "#types/primitives";
-type Actual<T> = IfNotAnyOrNever<T, TRUE, FALSE>;
+import type { IfAnyOrNever_Not } from "#types/primitives";
+type Actual<T> = IfAnyOrNever_Not<T, TRUE, FALSE>;
 
 // Prevents false positive, true negative, and error
 type TRUE = "TRUE";
