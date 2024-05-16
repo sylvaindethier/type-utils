@@ -1,7 +1,7 @@
 /**
  * Test a type against `never`
- * @typeParam T - The type to be tested against `never`
- * @typeParam P - The type to return in case the test is positive
- * @typeParam N - The type to return in case the test is negative
+ * @typeParam T - The type to test against `never`
+ * @typeParam Then - The type to return in case the condition is true
+ * @typeParam Else - The type to return in case the condition is false
  */
-export type IfNever<T, P = true, N = false> = [T] extends [never] ? P : N;
+export type IfNever<T, Then = true, Else = false> = [T] extends [never] ? Then : Else;

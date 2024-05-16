@@ -5,6 +5,15 @@
   },
   "typescript.inlayHints.parameterTypes.enabled": true,
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-  "cSpell.words": ["ecma", "github", "linebreak", "Parens", "postbuild", "tsdoc", "typecheck"],
+  "cSpell.words": [
+    "ecma",
+    "github",
+    "linebreak",
+    "Parens",
+    "postbuild",
+    "tsdoc",
+    "typecheck",
+    "XNOR"
+  ],
   "typescript.tsdk": "node_modules/typescript/lib"
 }

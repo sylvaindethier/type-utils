@@ -1,6 +1,6 @@
 import { expectTypeOf } from "vitest";
-import type { IfAny } from "#types/primitives";
-type Actual<T> = IfAny<T, TRUE, FALSE>;
+import type { IfAnyOrNever } from "#types/primitives";
+type Actual<T> = IfAnyOrNever<T, TRUE, FALSE>;
 
 // Prevents false positive, true negative, and error
 type TRUE = "TRUE";
@@ -14,9 +14,9 @@ describe("should respect truth table", () => {
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 
-  test("with `never` should resolve to `false`", () => {
+  test("with `never` should resolve to `true`", () => {
     type T = never;
-    type Expected = FALSE;
+    type Expected = TRUE;
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 

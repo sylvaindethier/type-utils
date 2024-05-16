@@ -2,12 +2,12 @@ import type { IfAny } from "./IfAny";
 
 /**
  * Test a type again `unknown`
- * @typeParam T - The type to be tested against `unknown`
- * @typeParam P - The type to return in case the test is positive
- * @typeParam N - The type to return in case the test is negative
+ * @typeParam T - The type to test against `unknown`
+ * @typeParam Then - The type to return in case the condition is true
+ * @typeParam Else - The type to return in case the condition is false
  */
-export type IfUnknown<T, P = true, N = false> = IfAny<T> extends true
-  ? N
-  : unknown extends T
-  ? P
-  : N;
+export type IfUnknown<T, Then = true, Else = false> = IfAny<
+  T,
+  Else,
+  unknown extends T ? Then : Else
+>;
