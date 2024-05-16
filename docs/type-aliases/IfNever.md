@@ -4,10 +4,10 @@
 
 [@sdt/typescript-utils](../globals.md) / IfNever
 
-# Type alias: IfNever\<T, P, N\>
+# Type alias: IfNever\<T, Then, Else\>
 
 ```ts
-type IfNever<T, P, N>: [T] extends [never] ? P : N;
+type IfNever<T, Then, Else>: [T] extends [never] ? Then : Else;
 ```
 
 Test a type against `never`
@@ -16,16 +16,16 @@ Test a type against `never`
 
 • **T**
 
-The type to be tested against `never`
+The type to test against `never`
 
-• **P** = `true`
+• **Then** = `true`
 
-The type to return in case the test is positive
+The type to return in case the condition is true
 
-• **N** = `false`
+• **Else** = `false`
 
-The type to return in case the test is negative
+The type to return in case the condition is false
 
 ## Source
 
-[primitives/IfNever.d.ts:7](https://github.com/sylvaindethier/typescript-utils/blob/edc656b23be8c3f01c4f75ed76a05aa613f4dd0c/types/primitives/IfNever.d.ts#L7)
+[primitives/IfNever.d.ts:7](https://github.com/sylvaindethier/typescript-utils/blob/da053667786f5d5e5c1616510ec7f7cc66f058b4/types/primitives/IfNever.d.ts#L7)

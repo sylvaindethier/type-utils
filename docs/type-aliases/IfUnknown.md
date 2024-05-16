@@ -4,10 +4,10 @@
 
 [@sdt/typescript-utils](../globals.md) / IfUnknown
 
-# Type alias: IfUnknown\<T, P, N\>
+# Type alias: IfUnknown\<T, Then, Else\>
 
 ```ts
-type IfUnknown<T, P, N>: IfAny<T> extends true ? N : unknown extends T ? P : N;
+type IfUnknown<T, Then, Else>: IfAny<T, Else, unknown extends T ? Then : Else>;
 ```
 
 Test a type again `unknown`
@@ -16,16 +16,16 @@ Test a type again `unknown`
 
 • **T**
 
-The type to be tested against `unknown`
+The type to test against `unknown`
 
-• **P** = `true`
+• **Then** = `true`
 
-The type to return in case the test is positive
+The type to return in case the condition is true
 
-• **N** = `false`
+• **Else** = `false`
 
-The type to return in case the test is negative
+The type to return in case the condition is false
 
 ## Source
 
-[primitives/IfUnknown.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/edc656b23be8c3f01c4f75ed76a05aa613f4dd0c/types/primitives/IfUnknown.d.ts#L9)
+[primitives/IfUnknown.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/da053667786f5d5e5c1616510ec7f7cc66f058b4/types/primitives/IfUnknown.d.ts#L9)

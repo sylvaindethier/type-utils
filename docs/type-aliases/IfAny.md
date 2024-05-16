@@ -4,10 +4,10 @@
 
 [@sdt/typescript-utils](../globals.md) / IfAny
 
-# Type alias: IfAny\<T, P, N\>
+# Type alias: IfAny\<T, Then, Else\>
 
 ```ts
-type IfAny<T, P, N>: 0 extends 1 & T ? P : N;
+type IfAny<T, Then, Else>: 0 extends 1 & T ? Then : Else;
 ```
 
 Test a type against `any`
@@ -16,16 +16,16 @@ Test a type against `any`
 
 • **T**
 
-The type to be tested against `any`
+The type to test against `any`
 
-• **P** = `true`
+• **Then** = `true`
 
-The type to return in case the test is positive
+The type to return in case the condition is true
 
-• **N** = `false`
+• **Else** = `false`
 
-The type to return in case the test is negative
+The type to return in case the condition is false
 
 ## Source
 
-[primitives/IfAny.d.ts:7](https://github.com/sylvaindethier/typescript-utils/blob/edc656b23be8c3f01c4f75ed76a05aa613f4dd0c/types/primitives/IfAny.d.ts#L7)
+[primitives/IfAny.d.ts:7](https://github.com/sylvaindethier/typescript-utils/blob/da053667786f5d5e5c1616510ec7f7cc66f058b4/types/primitives/IfAny.d.ts#L7)
