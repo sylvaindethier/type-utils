@@ -4,7 +4,7 @@
 
 # @sdt/typescript-utils ![CI](https://github.com/sylvaindethier/typescript-utils/workflows/CI/badge.svg)
 
-> TypeScript typesafe utilities completely tested
+> TypeScript type safe utilities completely tested
 
 ## Install
 

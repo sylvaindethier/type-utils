@@ -22,4 +22,4 @@ Test a `string` to be literal
 
 ## Source
 
-[primitives/IfString.d.ts:21](https://github.com/sylvaindethier/typescript-utils/blob/c2db051f7ef7ff24cba2e92cfd5e891000492922/types/primitives/IfString.d.ts#L21)
+[primitives/IfString.d.ts:21](https://github.com/sylvaindethier/typescript-utils/blob/a4617fb26232a8a136e0ffe6a2534b634ac803e6/types/primitives/IfString.d.ts#L21)

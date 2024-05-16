@@ -23,4 +23,4 @@ Logical SUM (= OR) operator
 
 ## Source
 
-[logic/operators/OR.d.ts:26](https://github.com/sylvaindethier/typescript-utils/blob/c2db051f7ef7ff24cba2e92cfd5e891000492922/types/logic/operators/OR.d.ts#L26)
+[logic/operators/OR.d.ts:26](https://github.com/sylvaindethier/typescript-utils/blob/a4617fb26232a8a136e0ffe6a2534b634ac803e6/types/logic/operators/OR.d.ts#L26)
