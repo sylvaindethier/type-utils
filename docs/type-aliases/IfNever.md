@@ -28,4 +28,4 @@ The type to return in case the condition is false
 
 ## Source
 
-[primitives/IfNever.d.ts:7](https://github.com/sylvaindethier/typescript-utils/blob/ab419bb948144c4ff1d3d3505b7f2f1b468a22c9/types/primitives/IfNever.d.ts#L7)
+[primitives/IfNever.d.ts:7](https://github.com/sylvaindethier/typescript-utils/blob/254cb70e64a181b28a83233c8f5f88b54fc4d037/types/primitives/IfNever.d.ts#L7)

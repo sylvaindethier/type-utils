@@ -29,4 +29,4 @@ The type to return in case the condition is false
 
 ## Source
 
-[primitives/IfAnyOrNever.d.ts:45](https://github.com/sylvaindethier/typescript-utils/blob/ab419bb948144c4ff1d3d3505b7f2f1b468a22c9/types/primitives/IfAnyOrNever.d.ts#L45)
+[primitives/IfAnyOrNever.d.ts:45](https://github.com/sylvaindethier/typescript-utils/blob/254cb70e64a181b28a83233c8f5f88b54fc4d037/types/primitives/IfAnyOrNever.d.ts#L45)

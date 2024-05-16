@@ -29,4 +29,4 @@ The type to return in case any of the boolean is not literal
 
 ## Source
 
-[logic/operators/EQV.d.ts:18](https://github.com/sylvaindethier/typescript-utils/blob/ab419bb948144c4ff1d3d3505b7f2f1b468a22c9/types/logic/operators/EQV.d.ts#L18)
+[logic/operators/EQV.d.ts:18](https://github.com/sylvaindethier/typescript-utils/blob/254cb70e64a181b28a83233c8f5f88b54fc4d037/types/logic/operators/EQV.d.ts#L18)
