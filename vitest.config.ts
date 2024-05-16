@@ -32,14 +32,14 @@ export default defineConfig({
       only: true,
     },
 
-    coverage: {
-      // enabled: true,
-      include: ["types/**"],
-      // extension: [".d.ts"],
-      // exclude: [
-      //   "index.d.ts",
-      //   ...coverageConfigDefaults.exclude,
-      // ],
-    },
+    // coverage: {
+    //   // enabled: true,
+    //   include: ["types/**"],
+    //   // extension: [".d.ts"],
+    //   // exclude: [
+    //   //   "index.d.ts",
+    //   //   ...coverageConfigDefaults.exclude,
+    //   // ],
+    // },
   },
 });
