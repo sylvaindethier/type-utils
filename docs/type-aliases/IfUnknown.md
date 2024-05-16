@@ -14,12 +14,18 @@ Test a type again `unknown`
 
 ## Type parameters
 
-| Type parameter | Value | Description |
-| :------ | :------ | :------ |
-| `T` | - | The type to test against `unknown` |
-| `Then` | `true` | The type to return in case the condition is true |
-| `Else` | `false` | The type to return in case the condition is false |
+• **T**
+
+The type to test against `unknown`
+
+• **Then** = `true`
+
+The type to return in case the condition is true
+
+• **Else** = `false`
+
+The type to return in case the condition is false
 
 ## Source
 
-[primitives/IfUnknown.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/a4617fb26232a8a136e0ffe6a2534b634ac803e6/types/primitives/IfUnknown.d.ts#L9)
+[primitives/IfUnknown.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/ab419bb948144c4ff1d3d3505b7f2f1b468a22c9/types/primitives/IfUnknown.d.ts#L9)

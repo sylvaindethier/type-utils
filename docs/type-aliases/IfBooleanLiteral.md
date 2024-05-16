@@ -14,12 +14,18 @@ Test a `boolean` to be literal, whether `true` or `false`
 
 ## Type parameters
 
-| Type parameter | Value | Description |
-| :------ | :------ | :------ |
-| `V` *extends* `boolean` | - | The boolean to test against `boolean` literal |
-| `Then` | `true` | The type to return in case the condition is true |
-| `Else` | `false` | The type to return in case the condition is false |
+• **V** *extends* `boolean`
+
+The boolean to test against `boolean` literal
+
+• **Then** = `true`
+
+The type to return in case the condition is true
+
+• **Else** = `false`
+
+The type to return in case the condition is false
 
 ## Source
 
-[primitives/IfBoolean.d.ts:21](https://github.com/sylvaindethier/typescript-utils/blob/a4617fb26232a8a136e0ffe6a2534b634ac803e6/types/primitives/IfBoolean.d.ts#L21)
+[primitives/IfBoolean.d.ts:21](https://github.com/sylvaindethier/typescript-utils/blob/ab419bb948144c4ff1d3d3505b7f2f1b468a22c9/types/primitives/IfBoolean.d.ts#L21)

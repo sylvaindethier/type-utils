@@ -14,11 +14,14 @@ Logical NOT operator
 
 ## Type parameters
 
-| Type parameter | Value | Description |
-| :------ | :------ | :------ |
-| `X` *extends* `boolean` | - | The boolean to perform the negation on |
-| `E` | `never` | The type to return in case the boolean is not literal |
+• **X** *extends* `boolean`
+
+The boolean to perform the negation on
+
+• **E** = `never`
+
+The type to return in case the boolean is not literal
 
 ## Source
 
-[logic/operators/NOT.d.ts:8](https://github.com/sylvaindethier/typescript-utils/blob/a4617fb26232a8a136e0ffe6a2534b634ac803e6/types/logic/operators/NOT.d.ts#L8)
+[logic/operators/NOT.d.ts:8](https://github.com/sylvaindethier/typescript-utils/blob/ab419bb948144c4ff1d3d3505b7f2f1b468a22c9/types/logic/operators/NOT.d.ts#L8)

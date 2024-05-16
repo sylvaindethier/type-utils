@@ -15,12 +15,18 @@ Logical EQV operator (= XNOR = NOT_XOR)
 
 ## Type parameters
 
-| Type parameter | Value | Description |
-| :------ | :------ | :------ |
-| `X` *extends* `boolean` | - | The X boolean to perform the operation |
-| `Y` *extends* `boolean` | - | The Y boolean to perform the operation |
-| `E` | `never` | The type to return in case any of the boolean is not literal |
+• **X** *extends* `boolean`
+
+The X boolean to perform the operation
+
+• **Y** *extends* `boolean`
+
+The Y boolean to perform the operation
+
+• **E** = `never`
+
+The type to return in case any of the boolean is not literal
 
 ## Source
 
-[logic/operators/EQV.d.ts:27](https://github.com/sylvaindethier/typescript-utils/blob/a4617fb26232a8a136e0ffe6a2534b634ac803e6/types/logic/operators/EQV.d.ts#L27)
+[logic/operators/EQV.d.ts:27](https://github.com/sylvaindethier/typescript-utils/blob/ab419bb948144c4ff1d3d3505b7f2f1b468a22c9/types/logic/operators/EQV.d.ts#L27)
