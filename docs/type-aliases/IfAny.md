@@ -22,4 +22,4 @@ Test a type against `any`
 
 ## Source
 
-[primitives/IfAny.d.ts:7](https://github.com/sylvaindethier/typescript-utils/blob/fc923b9b8f624519a4e708a123084592ab3d1c55/types/primitives/IfAny.d.ts#L7)
+[primitives/IfAny.d.ts:7](https://github.com/sylvaindethier/typescript-utils/blob/421887de13b8684fe14792f125c2cd5fdb322c0d/types/primitives/IfAny.d.ts#L7)

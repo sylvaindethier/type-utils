@@ -23,4 +23,4 @@ Logical XNOR operator
 
 ## Source
 
-[logic/operators/EQV.d.ts:18](https://github.com/sylvaindethier/typescript-utils/blob/fc923b9b8f624519a4e708a123084592ab3d1c55/types/logic/operators/EQV.d.ts#L18)
+[logic/operators/EQV.d.ts:18](https://github.com/sylvaindethier/typescript-utils/blob/421887de13b8684fe14792f125c2cd5fdb322c0d/types/logic/operators/EQV.d.ts#L18)

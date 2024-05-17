@@ -22,4 +22,4 @@ Test a type against `null`
 
 ## Source
 
-[primitives/IfNull.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/fc923b9b8f624519a4e708a123084592ab3d1c55/types/primitives/IfNull.d.ts#L9)
+[primitives/IfNull.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/421887de13b8684fe14792f125c2cd5fdb322c0d/types/primitives/IfNull.d.ts#L9)
