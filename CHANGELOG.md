@@ -1,5 +1,11 @@
 # @sdt/typescript-utils
 
+## 0.3.0
+
+### Minor Changes
+
+- 55956c5: Add primitives If\*, logic operators NOT,OR,ADD,XOR
+
 ## 0.2.0
 
 ### Minor Changes
