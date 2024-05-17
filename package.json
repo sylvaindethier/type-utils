@@ -51,6 +51,7 @@
     "test:watch": "vitest",
     "test:ui": "vitest run --ui",
     "test:coverage": "vitest run --coverage",
+    "doc": "npm run doc:build && npm run doc:commit",
     "doc:build": "typedoc",
     "doc:commit": "git add ./docs && git commit -m \"🤖: update build\""
   },
