@@ -23,4 +23,4 @@ Logical PRODUCT (= AND) operator
 
 ## Source
 
-[logic/operators/AND.d.ts:26](https://github.com/sylvaindethier/typescript-utils/blob/421887de13b8684fe14792f125c2cd5fdb322c0d/types/logic/operators/AND.d.ts#L26)
+[logic/operators/AND.d.ts:26](https://github.com/sylvaindethier/typescript-utils/blob/8e5403ef6aee7077fe4c3a20af320ab84f9dedde/types/logic/operators/AND.d.ts#L26)

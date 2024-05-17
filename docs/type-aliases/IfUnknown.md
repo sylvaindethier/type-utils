@@ -22,4 +22,4 @@ Test a type again `unknown`
 
 ## Source
 
-[primitives/IfUnknown.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/421887de13b8684fe14792f125c2cd5fdb322c0d/types/primitives/IfUnknown.d.ts#L9)
+[primitives/IfUnknown.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/8e5403ef6aee7077fe4c3a20af320ab84f9dedde/types/primitives/IfUnknown.d.ts#L9)

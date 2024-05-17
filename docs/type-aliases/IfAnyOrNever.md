@@ -22,4 +22,4 @@ Test a type against `any` or `never`
 
 ## Source
 
-[primitives/IfAnyOrNever.d.ts:10](https://github.com/sylvaindethier/typescript-utils/blob/421887de13b8684fe14792f125c2cd5fdb322c0d/types/primitives/IfAnyOrNever.d.ts#L10)
+[primitives/IfAnyOrNever.d.ts:10](https://github.com/sylvaindethier/typescript-utils/blob/8e5403ef6aee7077fe4c3a20af320ab84f9dedde/types/primitives/IfAnyOrNever.d.ts#L10)
