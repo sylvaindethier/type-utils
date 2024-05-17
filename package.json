@@ -41,8 +41,7 @@
   "scripts": {
     "prebuild": "npm run pretty",
     "pretty": "prettier --write \"{types,tests}/**/*.ts\"",
-    "build": "npm run build:doc",
-    "build:doc": "typedoc && git add ./docs && git commit -m \"🤖: update build\"",
+    "build": "npm run doc:build",
     "postbuild": "echo 'Describe the changes: `npm run changes`\nRelease the package: `npm run release`'",
     "changes": "npx changeset add",
     "prerelease": "npm run test",
@@ -51,7 +50,9 @@
     "test": "tsc & vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest run --ui",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "doc:build": "typedoc",
+    "doc:commit": "git add ./docs && git commit -m \"🤖: update build\""
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
