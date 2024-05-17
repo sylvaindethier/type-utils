@@ -22,4 +22,4 @@ Test a type against `never`
 
 ## Source
 
-[primitives/IfNever.d.ts:7](https://github.com/sylvaindethier/typescript-utils/blob/b4bd497afc46fe47c24db22965f824eb3fdda8ec/types/primitives/IfNever.d.ts#L7)
+[primitives/IfNever.d.ts:7](https://github.com/sylvaindethier/typescript-utils/blob/fc923b9b8f624519a4e708a123084592ab3d1c55/types/primitives/IfNever.d.ts#L7)

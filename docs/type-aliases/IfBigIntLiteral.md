@@ -22,4 +22,4 @@ Test a `bigint` to be literal
 
 ## Source
 
-[primitives/IfBigInt.d.ts:21](https://github.com/sylvaindethier/typescript-utils/blob/b4bd497afc46fe47c24db22965f824eb3fdda8ec/types/primitives/IfBigInt.d.ts#L21)
+[primitives/IfBigInt.d.ts:21](https://github.com/sylvaindethier/typescript-utils/blob/fc923b9b8f624519a4e708a123084592ab3d1c55/types/primitives/IfBigInt.d.ts#L21)

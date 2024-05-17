@@ -23,4 +23,4 @@ Logical EQV operator (= XNOR = NOT_XOR)
 
 ## Source
 
-[logic/operators/EQV.d.ts:27](https://github.com/sylvaindethier/typescript-utils/blob/b4bd497afc46fe47c24db22965f824eb3fdda8ec/types/logic/operators/EQV.d.ts#L27)
+[logic/operators/EQV.d.ts:27](https://github.com/sylvaindethier/typescript-utils/blob/fc923b9b8f624519a4e708a123084592ab3d1c55/types/logic/operators/EQV.d.ts#L27)

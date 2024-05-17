@@ -22,4 +22,4 @@ Logical AND operator
 
 ## Source
 
-[logic/operators/AND.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/b4bd497afc46fe47c24db22965f824eb3fdda8ec/types/logic/operators/AND.d.ts#L9)
+[logic/operators/AND.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/fc923b9b8f624519a4e708a123084592ab3d1c55/types/logic/operators/AND.d.ts#L9)

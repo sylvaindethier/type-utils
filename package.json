@@ -44,7 +44,7 @@
     "build": "npm run doc:build",
     "postbuild": "echo 'Describe the changes: `npm run changes`\nRelease the package: `npm run release`'",
     "changes": "npx changeset add",
-    "prerelease": "npm run test",
+    "prerelease": "npm run test && npm run build && npm run doc",
     "release": "npx changeset && npx changeset status && npx changeset version && npx changeset publish && git push --follow-tags",
     "pretest": "node scripts/file-extension.mjs",
     "test": "tsc & vitest run",
