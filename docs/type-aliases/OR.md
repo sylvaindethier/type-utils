@@ -22,4 +22,4 @@ Logical OR operator
 
 ## Source
 
-[logic/operators/OR.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/8e5403ef6aee7077fe4c3a20af320ab84f9dedde/types/logic/operators/OR.d.ts#L9)
+[logic/operators/OR.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/83679697f5d7fa0b2956157cf34be5813a5e5434/types/logic/operators/OR.d.ts#L9)
