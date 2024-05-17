@@ -4,10 +4,10 @@
 
 [@sdt/typescript-utils](../globals.md) / NOT
 
-# Type alias: NOT\<X, E\>
+# Type alias: NOT\<X, Error\>
 
 ```ts
-type NOT<X, E>: If<X, false, true, E>;
+type NOT<X, Error>: If<X, false, true, Error>;
 ```
 
 Logical NOT operator
@@ -17,8 +17,8 @@ Logical NOT operator
 | Type parameter | Value | Description |
 | :------ | :------ | :------ |
 | `X` *extends* `boolean` | - | The boolean to perform the negation on |
-| `E` | `never` | The type to return in case the boolean is not literal |
+| `Error` | `never` | The type to return in case the boolean is not literal |
 
 ## Source
 
-[logic/operators/NOT.d.ts:8](https://github.com/sylvaindethier/typescript-utils/blob/f271884d3138386b859e820c285b0ab8864227bb/types/logic/operators/NOT.d.ts#L8)
+[logic/operators/NOT.d.ts:8](https://github.com/sylvaindethier/typescript-utils/blob/b4bd497afc46fe47c24db22965f824eb3fdda8ec/types/logic/operators/NOT.d.ts#L8)

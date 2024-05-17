@@ -22,4 +22,4 @@ Test a type against `string`
 
 ## Source
 
-[primitives/IfString.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/f271884d3138386b859e820c285b0ab8864227bb/types/primitives/IfString.d.ts#L9)
+[primitives/IfString.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/b4bd497afc46fe47c24db22965f824eb3fdda8ec/types/primitives/IfString.d.ts#L9)

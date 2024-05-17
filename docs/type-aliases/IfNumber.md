@@ -22,4 +22,4 @@ Test a type against `number`
 
 ## Source
 
-[primitives/IfNumber.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/f271884d3138386b859e820c285b0ab8864227bb/types/primitives/IfNumber.d.ts#L9)
+[primitives/IfNumber.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/b4bd497afc46fe47c24db22965f824eb3fdda8ec/types/primitives/IfNumber.d.ts#L9)

@@ -4,10 +4,10 @@
 
 [@sdt/typescript-utils](../globals.md) / INH
 
-# Type alias: INH\<X, Y, E\>
+# Type alias: INH\<X, Y, Error\>
 
 ```ts
-type INH<X, Y, E>: PRODUCT<X, NOT<Y>, E>;
+type INH<X, Y, Error>: PRODUCT<X, NOT<Y>, Error>;
 ```
 
 Logical INH operator
@@ -18,8 +18,8 @@ Logical INH operator
 | :------ | :------ | :------ |
 | `X` *extends* `boolean` | - | The X boolean to perform the operation |
 | `Y` *extends* `boolean` | - | The Y boolean to perform the operation |
-| `E` | `never` | The type to return in case any of the boolean is not literal |
+| `Error` | `never` | The type to return in case any of the boolean is not literal |
 
 ## Source
 
-[logic/operators/INH.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/f271884d3138386b859e820c285b0ab8864227bb/types/logic/operators/INH.d.ts#L9)
+[logic/operators/INH.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/b4bd497afc46fe47c24db22965f824eb3fdda8ec/types/logic/operators/INH.d.ts#L9)

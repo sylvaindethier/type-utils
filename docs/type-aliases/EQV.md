@@ -4,10 +4,10 @@
 
 [@sdt/typescript-utils](../globals.md) / EQV
 
-# Type alias: EQV\<X, Y, E\>
+# Type alias: EQV\<X, Y, Error\>
 
 ```ts
-type EQV<X, Y, E>: NOT_XOR<X, Y, E>;
+type EQV<X, Y, Error>: NOT_XOR<X, Y, Error>;
 ```
 
 Logical EQV operator (= XNOR = NOT_XOR)
@@ -19,8 +19,8 @@ Logical EQV operator (= XNOR = NOT_XOR)
 | :------ | :------ | :------ |
 | `X` *extends* `boolean` | - | The X boolean to perform the operation |
 | `Y` *extends* `boolean` | - | The Y boolean to perform the operation |
-| `E` | `never` | The type to return in case any of the boolean is not literal |
+| `Error` | `never` | The type to return in case any of the boolean is not literal |
 
 ## Source
 
-[logic/operators/EQV.d.ts:27](https://github.com/sylvaindethier/typescript-utils/blob/f271884d3138386b859e820c285b0ab8864227bb/types/logic/operators/EQV.d.ts#L27)
+[logic/operators/EQV.d.ts:27](https://github.com/sylvaindethier/typescript-utils/blob/b4bd497afc46fe47c24db22965f824eb3fdda8ec/types/logic/operators/EQV.d.ts#L27)

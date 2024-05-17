@@ -22,4 +22,4 @@ Test a `boolean` to be literal, whether `true` or `false`
 
 ## Source
 
-[primitives/IfBoolean.d.ts:21](https://github.com/sylvaindethier/typescript-utils/blob/f271884d3138386b859e820c285b0ab8864227bb/types/primitives/IfBoolean.d.ts#L21)
+[primitives/IfBoolean.d.ts:21](https://github.com/sylvaindethier/typescript-utils/blob/b4bd497afc46fe47c24db22965f824eb3fdda8ec/types/primitives/IfBoolean.d.ts#L21)

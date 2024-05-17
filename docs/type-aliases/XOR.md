@@ -4,10 +4,10 @@
 
 [@sdt/typescript-utils](../globals.md) / XOR
 
-# Type alias: XOR\<X, Y, E\>
+# Type alias: XOR\<X, Y, Error\>
 
 ```ts
-type XOR<X, Y, E>: PRODUCT<SUM<X, Y>, NOT<PRODUCT<X, Y>>, E>;
+type XOR<X, Y, Error>: PRODUCT<SUM<X, Y>, NOT<PRODUCT<X, Y>>, Error>;
 ```
 
 Logical XOR operator
@@ -18,8 +18,8 @@ Logical XOR operator
 | :------ | :------ | :------ |
 | `X` *extends* `boolean` | - | The X boolean to perform the operation |
 | `Y` *extends* `boolean` | - | The Y boolean to perform the operation |
-| `E` | `never` | The type to return in case any of the boolean is not literal |
+| `Error` | `never` | The type to return in case any of the boolean is not literal |
 
 ## Source
 
-[logic/operators/XOR.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/f271884d3138386b859e820c285b0ab8864227bb/types/logic/operators/XOR.d.ts#L9)
+[logic/operators/XOR.d.ts:9](https://github.com/sylvaindethier/typescript-utils/blob/b4bd497afc46fe47c24db22965f824eb3fdda8ec/types/logic/operators/XOR.d.ts#L9)

@@ -23,4 +23,4 @@ Test a `boolean` against to be `true`
 
 ## Source
 
-[logic/If.d.ts:10](https://github.com/sylvaindethier/typescript-utils/blob/f271884d3138386b859e820c285b0ab8864227bb/types/logic/If.d.ts#L10)
+[logic/If.d.ts:10](https://github.com/sylvaindethier/typescript-utils/blob/b4bd497afc46fe47c24db22965f824eb3fdda8ec/types/logic/If.d.ts#L10)
