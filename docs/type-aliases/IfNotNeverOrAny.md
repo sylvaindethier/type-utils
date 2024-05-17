@@ -15,18 +15,12 @@ Test a type against not `any` or `never`
 
 ## Type parameters
 
-• **T**
-
-The type to test against `any` or `never`
-
-• **Then** = `true`
-
-The type to return in case the condition is true
-
-• **Else** = `false`
-
-The type to return in case the condition is false
+| Type parameter | Value | Description |
+| :------ | :------ | :------ |
+| `T` | - | The type to test against `any` or `never` |
+| `Then` | `true` | The type to return in case the condition is true |
+| `Else` | `false` | The type to return in case the condition is false |
 
 ## Source
 
-[primitives/IfAnyOrNever.d.ts:45](https://github.com/sylvaindethier/typescript-utils/blob/254cb70e64a181b28a83233c8f5f88b54fc4d037/types/primitives/IfAnyOrNever.d.ts#L45)
+[primitives/IfAnyOrNever.d.ts:45](https://github.com/sylvaindethier/typescript-utils/blob/f271884d3138386b859e820c285b0ab8864227bb/types/primitives/IfAnyOrNever.d.ts#L45)

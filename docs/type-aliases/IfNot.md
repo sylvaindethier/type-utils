@@ -14,22 +14,13 @@ Test a `boolean` to be `false`
 
 ## Type parameters
 
-• **B** *extends* `boolean`
-
-The `boolean` to test against `false`
-
-• **Then** = `true`
-
-The type to return in case the condition is true
-
-• **Else** = `false`
-
-The type to return in case the condition is false
-
-• **Error** = `never`
-
-The type to return in case the boolean is not literal
+| Type parameter | Value | Description |
+| :------ | :------ | :------ |
+| `B` *extends* `boolean` | - | The `boolean` to test against `false` |
+| `Then` | `true` | The type to return in case the condition is true |
+| `Else` | `false` | The type to return in case the condition is false |
+| `Error` | `never` | The type to return in case the boolean is not literal |
 
 ## Source
 
-[logic/If.d.ts:23](https://github.com/sylvaindethier/typescript-utils/blob/254cb70e64a181b28a83233c8f5f88b54fc4d037/types/logic/If.d.ts#L23)
+[logic/If.d.ts:23](https://github.com/sylvaindethier/typescript-utils/blob/f271884d3138386b859e820c285b0ab8864227bb/types/logic/If.d.ts#L23)

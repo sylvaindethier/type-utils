@@ -15,18 +15,12 @@ Logical PRODUCT (= AND) operator
 
 ## Type parameters
 
-• **X** *extends* `boolean`
-
-The X boolean to perform the conjunction
-
-• **Y** *extends* `boolean`
-
-The Y boolean to perform the conjunction
-
-• **Error** = `never`
-
-The type to return in case any of the boolean is not literal
+| Type parameter | Value | Description |
+| :------ | :------ | :------ |
+| `X` *extends* `boolean` | - | The X boolean to perform the conjunction |
+| `Y` *extends* `boolean` | - | The Y boolean to perform the conjunction |
+| `Error` | `never` | The type to return in case any of the boolean is not literal |
 
 ## Source
 
-[logic/operators/AND.d.ts:26](https://github.com/sylvaindethier/typescript-utils/blob/254cb70e64a181b28a83233c8f5f88b54fc4d037/types/logic/operators/AND.d.ts#L26)
+[logic/operators/AND.d.ts:26](https://github.com/sylvaindethier/typescript-utils/blob/f271884d3138386b859e820c285b0ab8864227bb/types/logic/operators/AND.d.ts#L26)

@@ -15,18 +15,12 @@ Logical SUM (= OR) operator
 
 ## Type parameters
 
-• **X** *extends* `boolean`
-
-The X boolean to perform the disjunction
-
-• **Y** *extends* `boolean`
-
-The Y boolean to perform the disjunction
-
-• **Error** = `never`
-
-The type to return in case any of the boolean is not literal
+| Type parameter | Value | Description |
+| :------ | :------ | :------ |
+| `X` *extends* `boolean` | - | The X boolean to perform the disjunction |
+| `Y` *extends* `boolean` | - | The Y boolean to perform the disjunction |
+| `Error` | `never` | The type to return in case any of the boolean is not literal |
 
 ## Source
 
-[logic/operators/OR.d.ts:26](https://github.com/sylvaindethier/typescript-utils/blob/254cb70e64a181b28a83233c8f5f88b54fc4d037/types/logic/operators/OR.d.ts#L26)
+[logic/operators/OR.d.ts:26](https://github.com/sylvaindethier/typescript-utils/blob/f271884d3138386b859e820c285b0ab8864227bb/types/logic/operators/OR.d.ts#L26)

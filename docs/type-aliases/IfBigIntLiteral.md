@@ -14,18 +14,12 @@ Test a `bigint` to be literal
 
 ## Type parameters
 
-• **V** *extends* `bigint`
-
-The bigint type to be tested against `bigint` literal
-
-• **Then** = `true`
-
-The type to return in case the condition is true
-
-• **Else** = `false`
-
-The type to return in case the condition is false
+| Type parameter | Value | Description |
+| :------ | :------ | :------ |
+| `V` *extends* `bigint` | - | The bigint type to be tested against `bigint` literal |
+| `Then` | `true` | The type to return in case the condition is true |
+| `Else` | `false` | The type to return in case the condition is false |
 
 ## Source
 
-[primitives/IfBigInt.d.ts:21](https://github.com/sylvaindethier/typescript-utils/blob/254cb70e64a181b28a83233c8f5f88b54fc4d037/types/primitives/IfBigInt.d.ts#L21)
+[primitives/IfBigInt.d.ts:21](https://github.com/sylvaindethier/typescript-utils/blob/f271884d3138386b859e820c285b0ab8864227bb/types/primitives/IfBigInt.d.ts#L21)

@@ -4,9 +4,7 @@
 
 # @sdt/typescript-utils
 
-## Type Aliases
-
-| Type alias | Description |
+| Member | Description |
 | :------ | :------ |
 | [AND](type-aliases/AND.md) | Logical AND operator |
 | [EQV](type-aliases/EQV.md) | Logical EQV operator (= XNOR = NOT_XOR) |
