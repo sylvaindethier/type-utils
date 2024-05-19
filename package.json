@@ -41,7 +41,7 @@
   "scripts": {
     "prebuild": "npm run pretty",
     "pretty": "prettier --write \"{types,tests}/**/*.ts\"",
-    "build": "npm run doc:build",
+    "build": "npm run build:doc",
     "build:doc": "typedoc",
     "postbuild": "echo 'Describe the changes: `npm run changes`\nRelease the package: `npm run release`'",
     "changes": "npx changeset add",
