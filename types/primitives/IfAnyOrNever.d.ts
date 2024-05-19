@@ -1,5 +1,4 @@
-import type { IfAny } from "./IfAny";
-import type { IfNever } from "./IfNever";
+import type { IfAny, IfNever } from "./index";
 
 /**
  * Test a type against `any` or `never`
@@ -10,13 +9,9 @@ import type { IfNever } from "./IfNever";
 export type IfAnyOrNever<T, Then = true, Else = false> = IfAny<T, Then, IfNever<T, Then, Else>>;
 
 /**
- * Test a type against `any` or `never`
  * {@link IfAnyOrNever}
- * @typeParam T - The type to test against `any` or `never`
- * @typeParam Then - The type to return in case the condition is true
- * @typeParam Else - The type to return in case the condition is false
  */
-export type IfNeverOrAny<T, Then = true, Else = false> = IfAnyOrNever<T, Then, Else>;
+export type { IfAnyOrNever as IfNeverOrAny };
 
 /**
  * Test a type against not `any` or `never`
@@ -27,19 +22,11 @@ export type IfNeverOrAny<T, Then = true, Else = false> = IfAnyOrNever<T, Then, E
 export type IfAnyOrNever_Not<T, Then = true, Else = false> = IfAnyOrNever<T, Else, Then>;
 
 /**
- * Test a type against not `any` or `never`
  * {@link IfAnyOrNever_Not}
- * @typeParam T - The type to test against `any` or `never`
- * @typeParam Then - The type to return in case the condition is true
- * @typeParam Else - The type to return in case the condition is false
  */
-export type IfNotAnyOrNever<T, Then = true, Else = false> = IfAnyOrNever_Not<T, Then, Else>;
+export type { IfAnyOrNever_Not as IfNotAnyOrNever };
 
 /**
- * Test a type against not `any` or `never`
  * {@link IfAnyOrNever_Not}
- * @typeParam T - The type to test against `any` or `never`
- * @typeParam Then - The type to return in case the condition is true
- * @typeParam Else - The type to return in case the condition is false
  */
-export type IfNotNeverOrAny<T, Then = true, Else = false> = IfAnyOrNever_Not<T, Then, Else>;
+export type { IfAnyOrNever_Not as IfNotNeverOrAny };

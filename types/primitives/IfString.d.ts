@@ -1,8 +1,9 @@
+export type * from "./IfStringLiteral";
 import type { IfNotAnyOrNever } from "./IfAnyOrNever";
 
 /**
  * Test a type against `string`
- * @typeParam T - The type to be tested against `string`
+ * @typeParam T - The type to test against `string`
  * @typeParam Then - The type to return in case the condition is true
  * @typeParam Else - The type to return in case the condition is false
  */
@@ -13,13 +14,14 @@ export type IfString<T, Then = true, Else = false> = IfNotAnyOrNever<
 >;
 
 /**
- * Test a `string` to be literal
- * @typeParam V - The bigint type to be tested against `bigint` literal
+ * Test a type against not `string`
+ * @typeParam T - The type to test against not `string`
  * @typeParam Then - The type to return in case the condition is true
  * @typeParam Else - The type to return in case the condition is false
  */
-export type IfStringLiteral<V extends string, Then = true, Else = false> = IfString<
-  V,
-  string extends V ? Else : Then,
-  Else
->;
+export type IfString_Not<T, Then = true, Else = false> = IfString<T, Else, Then>;
+
+/**
+ * {@link IfString_Not}
+ */
+export type { IfString_Not as IfNotString };
