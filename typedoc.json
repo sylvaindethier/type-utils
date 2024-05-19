@@ -1,17 +1,62 @@
 {
-  "$schema": "https://typedoc-plugin-markdown.org/schema.json",
-  "plugin": ["typedoc-plugin-markdown"],
-  "entryPoints": ["./types/index.d.ts"],
-  "out": "./docs",
-  "mergeReadme": false,
-  "outputFileStrategy": "members",
-  "membersWithOwnFile": ["Interface", "TypeAlias", "Variable"],
-  "excludeGroups": true,
-  "useCodeBlocks": true,
-  "expandParameters": true,
-  "parametersFormat": "table",
-  "propertiesFormat": "table",
-  "enumMembersFormat": "table",
-  "typeDeclarationFormat": "table",
-  "indexFormat": "table"
+  "$schema": "https://typedoc.org/schema.json",
+
+  "logLevel": "Verbose",
+
+  //* Input *//
+  "entryPoints": ["types/*"],
+  "entryPointStrategy": "expand",
+  "exclude": ["**/index.d.ts"],
+  "includeVersion": true,
+  // "name": "<Documentation title>",
+  // "readme": "none",
+
+  //* Output *//
+  "out": "docs",
+  "json": "docs/docs.json",
+
+  //* Validation *//
+  "validation": {
+    "notExported": true,
+    "invalidLink": true,
+    "notDocumented": true
+  },
+  //* @see https://typedoc.org/options/validation/#requiredtobedocumented *//
+  "requiredToBeDocumented": [
+    // "Project",
+    // "Module",
+    // "Namespace",
+    "Enum",
+    "EnumMember",
+    "Variable",
+    "Function",
+    "Class",
+    "Interface",
+    // "Constructor",
+    "Property",
+    "Method",
+    //* Implicitly set if function/method is set (this means you can't require docs on methods, but not functions)
+    //* This exists because methods/functions can have multiple signatures due to overloads, and TypeDoc puts comment
+    //* data on the signature. This might be improved someday, so you probably shouldn't set this directly.
+    // "CallSignature",
+    //* Index signature { [k: string]: string } "properties"
+    //    "IndexSignature",
+    //* Equivalent to Constructor due to the same implementation detail as CallSignature
+    //    "ConstructorSignature",
+    "Parameter",
+    //* Used for object literal types. You probably should set TypeAlias instead, which refers to types created with `type X =`.
+    //* This only really exists because of an implementation detail.
+    //    "TypeLiteral",
+    "TypeParameter",
+    "Accessor", // shorthand for GetSignature + SetSignature
+    //   "GetSignature",
+    //    "SetSignature",
+    "TypeAlias"
+    //* TypeDoc creates reference reflections if a symbol is exported from a package with multiple names. Most projects
+    //* won't have any of these, and they just render as a link to the canonical name.
+    // "Reference"
+  ],
+
+  //* Plugin *//
+  "plugin": ["typedoc-plugin-coverage"]
 }

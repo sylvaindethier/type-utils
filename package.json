@@ -42,6 +42,7 @@
     "prebuild": "npm run pretty",
     "pretty": "prettier --write \"{types,tests}/**/*.ts\"",
     "build": "npm run doc:build",
+    "build:doc": "typedoc",
     "postbuild": "echo 'Describe the changes: `npm run changes`\nRelease the package: `npm run release`'",
     "changes": "npx changeset add",
     "prerelease": "npm run test && npm run build && npm run doc",
@@ -50,10 +51,7 @@
     "test": "tsc & vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest run --ui",
-    "test:coverage": "vitest run --coverage",
-    "doc": "npm run doc:build && npm run doc:commit",
-    "doc:build": "typedoc",
-    "doc:commit": "git add ./docs && git commit -m \"🤖: update build\""
+    "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
@@ -69,7 +67,7 @@
     "jsdom": "^24.0.0",
     "prettier": "^2.8.8",
     "typedoc": "^0.25.13",
-    "typedoc-plugin-markdown": "^4.0.1",
+    "typedoc-plugin-coverage": "^3.1.1",
     "typescript": "^5.4.5",
     "vite": "^5.2.11",
     "vite-plugin-eslint": "^1.8.1",
