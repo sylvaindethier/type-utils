@@ -9,9 +9,9 @@
 
 - `npm`
 
- ```sh
- npm install -D @sdt/typescript-utils
- ```
+  ```sh
+  npm install -D @sdt/typescript-utils
+  ```
 
 - `pnpm`
 
@@ -27,4 +27,4 @@
 
 ## Documentation
 
-See the [documentation page](docs/globals.md).
+See the [documentation page](https://sylvaindethier.github.io/typescript-utils/).
