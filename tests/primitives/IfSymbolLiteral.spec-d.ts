@@ -1,6 +1,6 @@
 import { expectTypeOf } from "vitest";
-import type { IfBooleanLiteral as Test } from "#types/primitives";
-type Actual<V extends boolean> = Test<V, Then, Else>;
+import type { IfSymbolLiteral as Test } from "#types/primitives";
+type Actual<V extends symbol> = Test<V, Then, Else>;
 
 // Prevents false positive, and true negative
 type Then = "Then";
@@ -20,20 +20,15 @@ describe("should respect truth table", () => {
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 
-  test("with `boolean` should resolve to `Else`", () => {
-    type T = boolean;
+  test("with `symbol` should resolve to `Else`", () => {
+    type T = symbol;
     type Expected = Else;
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 
-  test("with `false` should resolve to `Then`", () => {
-    type T = false;
-    type Expected = Then;
-    expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
-  });
-
-  test("with `true` should resolve to `Then`", () => {
-    type T = true;
+  test("with `Symbol()` should resolve to `Then`", () => {
+    const _symbol = Symbol();
+    type T = typeof _symbol;
     type Expected = Then;
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });

@@ -1,5 +1,5 @@
 import { expectTypeOf } from "vitest";
-import type { IfAny as Test } from "#types/primitives";
+import type { IfBigInt_Not as Test } from "#types/primitives";
 type Actual<T> = Test<T, Then, Else>;
 
 // Prevents false positive, and true negative
@@ -14,39 +14,39 @@ describe("should respect truth table", () => {
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 
-  test("with `never` should resolve to `Else`", () => {
+  test("with `never` should resolve to `Then`", () => {
     type T = never;
-    type Expected = Else;
+    type Expected = Then;
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 
-  test("with `unknown` should resolve to `Else`", () => {
+  test("with `unknown` should resolve to `Then`", () => {
     type T = unknown;
-    type Expected = Else;
+    type Expected = Then;
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 
-  test("with `undefined` should resolve to `Else`", () => {
+  test("with `undefined` should resolve to `Then`", () => {
     type T = undefined;
-    type Expected = Else;
+    type Expected = Then;
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 
-  test("with `null` should resolve to `Else`", () => {
+  test("with `null` should resolve to `Then`", () => {
     type T = null;
-    type Expected = Else;
+    type Expected = Then;
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 
-  test("with `boolean` should resolve to `Else`", () => {
+  test("with `boolean` should resolve to `Then`", () => {
     type T = boolean;
-    type Expected = Else;
+    type Expected = Then;
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 
-  test("with `number` should resolve to `Else`", () => {
+  test("with `number` should resolve to `Then`", () => {
     type T = number;
-    type Expected = Else;
+    type Expected = Then;
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 
@@ -56,15 +56,15 @@ describe("should respect truth table", () => {
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 
-  test("with `string` should resolve to `Else`", () => {
+  test("with `string` should resolve to `Then`", () => {
     type T = string;
-    type Expected = Else;
+    type Expected = Then;
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 
-  test("with `symbol` should resolve to `Else`", () => {
+  test("with `symbol` should resolve to `Then`", () => {
     type T = symbol;
-    type Expected = Else;
+    type Expected = Then;
     expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
   });
 });
