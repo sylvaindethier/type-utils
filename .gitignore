@@ -11,7 +11,7 @@ lerna-debug.log*
 coverage*
 
 # # Docs # build with GitHub Actions workflows
-# docs
+docs
 
 # Dependency directories
 node_modules/
