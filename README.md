@@ -1,7 +1,7 @@
 # @sdt/typescript-utils
 
 ![NPM Version](https://img.shields.io/npm/v/%40sdt%2Ftypescript-utils)
-![Coverage](docs/coverage.svg)
+![Coverage](https://github.com/sylvaindethier/typescript-utils/blob/gh-pages/coverage.svg?raw=true)
 ![CI](https://github.com/sylvaindethier/typescript-utils/workflows/CI/badge.svg)
 
 > TypeScript type safe utilities completely tested
