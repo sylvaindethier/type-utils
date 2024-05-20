@@ -1,22 +1,15 @@
-import { defineConfig } from "vite";
-// import {
-//   configDefaults,
-//   coverageConfigDefaults,
-// } from "vitest/config";
-import eslint from "vite-plugin-eslint";
+import {
+  defineConfig,
+  // configDefaults,
+  // coverageConfigDefaults,
+} from "vitest/config";
 
 // Allow using conditional reporters
-import type { InlineConfig } from "vitest";
 import { env } from "node:process";
+import type { InlineConfig } from "vitest";
 const reporters: InlineConfig["reporters"] = ["default"];
 
 export default defineConfig({
-  plugins: [eslint()],
-
-  build: {
-    target: "esnext",
-  },
-
   test: {
     environment: "jsdom",
     globals: true,
