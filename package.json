@@ -73,6 +73,9 @@
     "vite-plugin-eslint": "^1.8.1",
     "vitest": "^1.6.0"
   },
+  "peerDependencies": {
+    "typescript": ">=5.2.0"
+  },
   "engines": {
     "node": ">=16.0.0"
   }
