@@ -1,9 +1,8 @@
 // Primitives
 export type * from "./primitives";
 
-// // Logic
-// export type * from "./logic/If";
-// export type * from "./logic/operators/index";
+// Logic
+export type * from "./logic";
 
 // String
 

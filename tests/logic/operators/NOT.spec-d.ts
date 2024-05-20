@@ -8,15 +8,15 @@ type ERROR = "ERROR";
 type Y = never;
 
 describe("should respect truth table", () => {
-  test("with {`false`} should result to `true`", () => {
-    type Expected = true;
+  test("with {`false`} should resolve to `true`", () => {
     type X = false;
+    type Expected = true;
     expectTypeOf<Actual<X, Y>>().toEqualTypeOf<Expected>();
   });
 
-  test("with {`true`} should result to `false`", () => {
-    type Expected = false;
+  test("with {`true`} should resolve to `false`", () => {
     type X = true;
+    type Expected = false;
     expectTypeOf<Actual<X, Y>>().toEqualTypeOf<Expected>();
   });
 });
@@ -24,14 +24,14 @@ describe("should respect truth table", () => {
 describe("should `ERROR`", () => {
   type Expected = ERROR;
 
-  test("with {`never`}", () => {
-    type X = never;
-    expectTypeOf<Actual<X, Y>>().toEqualTypeOf<Expected>();
-  });
-
   test("with {`any`}", () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     type X = any;
+    expectTypeOf<Actual<X, Y>>().toEqualTypeOf<Expected>();
+  });
+
+  test("with {`never`}", () => {
+    type X = never;
     expectTypeOf<Actual<X, Y>>().toEqualTypeOf<Expected>();
   });
 

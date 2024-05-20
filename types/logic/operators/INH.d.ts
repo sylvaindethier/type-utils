@@ -1,4 +1,4 @@
-import type { PRODUCT, NOT } from "../operators";
+import type { PRODUCT, NOT } from "./index";
 
 /**
  * Logical INH operator

@@ -1,4 +1,4 @@
-import type { SUM, NOT } from "../operators";
+import type { SUM, NOT } from "./index";
 
 /**
  * Logical IMP operator

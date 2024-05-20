@@ -1,4 +1,4 @@
-import type { PRODUCT, SUM, NOT } from "../operators";
+import type { PRODUCT, SUM, NOT } from "./index";
 
 /**
  * Logical XOR operator

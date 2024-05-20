@@ -1,4 +1,4 @@
-import type { IfBooleanLiteral } from "../primitives/IfBoolean";
+import type { IfBooleanLiteral } from "../primitives/IfBooleanLiteral";
 
 /**
  * Test a `boolean` against to be `true`
