@@ -8,9 +8,9 @@ import type { If } from "../If";
  */
 export type AND<X extends boolean, Y extends boolean, Error = never> = If<
   X,
-  // X is `true`, result is `true` only when Y is `true`
+  // X is `true`, resolve to `true` only when Y is `true`
   If<Y, true, false, Error>,
-  // X is `false`, result is `false`
+  // X is `false`, resolve to `false`
   If<Y, false, false, Error>,
   Error
 >;

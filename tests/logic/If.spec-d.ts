@@ -1,6 +1,6 @@
 import { expectTypeOf } from "vitest";
-import type { If } from "#types/logic";
-type Actual<B extends boolean> = If<B, Then, Else, ERROR>;
+import type { If as ImportType } from "#types/logic";
+type TestType<B extends boolean> = ImportType<B, Then, Else, ERROR>;
 
 // Prevents false positive, true negative, and error
 type Then = "Then";
@@ -9,15 +9,17 @@ type ERROR = "ERROR";
 
 describe("should respect truth table", () => {
   test("with `false` should resolve to `Else`", () => {
-    type Condition = false;
+    type B = false;
+    type Actual = TestType<B>;
     type Expected = Else;
-    expectTypeOf<Actual<Condition>>().toEqualTypeOf<Expected>();
+    expectTypeOf<Actual>().toEqualTypeOf<Expected>();
   });
 
   test("with `true` should resolve to `Then`", () => {
-    type Condition = true;
+    type B = true;
+    type Actual = TestType<B>;
     type Expected = Then;
-    expectTypeOf<Actual<Condition>>().toEqualTypeOf<Expected>();
+    expectTypeOf<Actual>().toEqualTypeOf<Expected>();
   });
 });
 
@@ -26,17 +28,20 @@ describe("should `ERROR`", () => {
 
   test("with `any`", () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    type Condition = any;
-    expectTypeOf<Actual<Condition>>().toEqualTypeOf<Expected>();
+    type B = any;
+    type Actual = TestType<B>;
+    expectTypeOf<Actual>().toEqualTypeOf<Expected>();
   });
 
   test("with `never`", () => {
-    type Condition = never;
-    expectTypeOf<Actual<Condition>>().toEqualTypeOf<Expected>();
+    type B = never;
+    type Actual = TestType<B>;
+    expectTypeOf<Actual>().toEqualTypeOf<Expected>();
   });
 
   test("with `boolean`", () => {
-    type Condition = boolean;
-    expectTypeOf<Actual<Condition>>().toEqualTypeOf<Expected>();
+    type B = boolean;
+    type Actual = TestType<B>;
+    expectTypeOf<Actual>().toEqualTypeOf<Expected>();
   });
 });

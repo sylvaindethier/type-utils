@@ -1,6 +1,6 @@
 import { expectTypeOf } from "vitest";
-import type { IfBigIntLiteral as Test } from "#types/primitives";
-type Actual<V extends bigint> = Test<V, Then, Else>;
+import type { IfBigIntLiteral as ImportType } from "#types/primitives";
+type TestType<V extends bigint> = ImportType<V, Then, Else>;
 
 // Prevents false positive, and true negative
 type Then = "Then";
@@ -9,26 +9,30 @@ type Else = "Else";
 describe("should respect truth table", () => {
   test("with `any` should resolve to `Else`", () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    type T = any;
+    type V = any;
+    type Actual = TestType<V>;
     type Expected = Else;
-    expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
+    expectTypeOf<Actual>().toEqualTypeOf<Expected>();
   });
 
   test("with `never` should resolve to `Else`", () => {
-    type T = never;
+    type V = never;
+    type Actual = TestType<V>;
     type Expected = Else;
-    expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
+    expectTypeOf<Actual>().toEqualTypeOf<Expected>();
   });
 
   test("with `bigint` should resolve to `Else`", () => {
-    type T = bigint;
+    type V = bigint;
+    type Actual = TestType<V>;
     type Expected = Else;
-    expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
+    expectTypeOf<Actual>().toEqualTypeOf<Expected>();
   });
 
   test("with `42n` should resolve to `Then`", () => {
-    type T = 42n;
+    type V = 42n;
+    type Actual = TestType<V>;
     type Expected = Then;
-    expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
+    expectTypeOf<Actual>().toEqualTypeOf<Expected>();
   });
 });

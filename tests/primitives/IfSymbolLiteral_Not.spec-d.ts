@@ -1,6 +1,6 @@
 import { expectTypeOf } from "vitest";
-import type { IfSymbolLiteral_Not as Test } from "#types/primitives";
-type Actual<V extends symbol> = Test<V, Then, Else>;
+import type { IfSymbolLiteral_Not as ImportType } from "#types/primitives";
+type TestType<V extends symbol> = ImportType<V, Then, Else>;
 
 // Prevents false positive, and true negative
 type Then = "Then";
@@ -9,27 +9,31 @@ type Else = "Else";
 describe("should respect truth table", () => {
   test("with `any` should resolve to `Then`", () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    type T = any;
+    type V = any;
+    type Actual = TestType<V>;
     type Expected = Then;
-    expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
+    expectTypeOf<Actual>().toEqualTypeOf<Expected>();
   });
 
   test("with `never` should resolve to `Then`", () => {
-    type T = never;
+    type V = never;
+    type Actual = TestType<V>;
     type Expected = Then;
-    expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
+    expectTypeOf<Actual>().toEqualTypeOf<Expected>();
   });
 
   test("with `symbol` should resolve to `Then`", () => {
-    type T = symbol;
+    type V = symbol;
+    type Actual = TestType<V>;
     type Expected = Then;
-    expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
+    expectTypeOf<Actual>().toEqualTypeOf<Expected>();
   });
 
   test("with `Symbol()` should resolve to `Else`", () => {
     const _symbol = Symbol();
-    type T = typeof _symbol;
+    type V = typeof _symbol;
+    type Actual = TestType<V>;
     type Expected = Else;
-    expectTypeOf<Actual<T>>().toEqualTypeOf<Expected>();
+    expectTypeOf<Actual>().toEqualTypeOf<Expected>();
   });
 });
