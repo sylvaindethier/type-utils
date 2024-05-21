@@ -5,7 +5,7 @@ export type * from "./primitives";
 export type * from "./logic";
 
 // String
+export type * from "./strings";
 
-// Utilities
-// export type * from "./utils/Prettify";
-// export type * from "./utils/Refine";
+// Utils
+export type * from "./utils";
