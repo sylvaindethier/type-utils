@@ -1,5 +1,5 @@
 export type * from "./IfNumberLiteral";
-import type { IfNotAnyOrNever } from "./index";
+import type { IfNotAnyOrNever } from "./";
 
 /**
  * Test a type against `number`

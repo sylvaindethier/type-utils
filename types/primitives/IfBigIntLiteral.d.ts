@@ -1,4 +1,4 @@
-import type { IfNotBigInt } from "./IfBigInt";
+import type { IfNotBigInt } from "./";
 
 /**
  * Test a `bigint` to be literal

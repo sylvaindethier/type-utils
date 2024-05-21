@@ -1,5 +1,5 @@
 export type * from "./IfSymbolLiteral";
-import type { IfNotAnyOrNever } from "./IfAnyOrNever";
+import type { IfNotAnyOrNever } from "./";
 
 /**
  * Test a type against `symbol`

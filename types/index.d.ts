@@ -1,11 +1,12 @@
 // Primitives
 export type * from "./primitives";
 
-// Logic
-export type * from "./logic";
+// Logical Operators
+export type * from "./logical-operators";
 
-// String
+// Strings, Template Literals
 export type * from "./strings";
+export type * from "./strings/template-literals";
 
-// Utils
-export type * from "./utils";
+// Objects
+export type * from "./objects";

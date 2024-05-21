@@ -1,4 +1,4 @@
-import type { IfNotBoolean } from "./index";
+import type { IfNotBoolean } from "./";
 
 /**
  * Test a `boolean` to be literal

@@ -1,4 +1,4 @@
-import type { IfNotAny } from "./index";
+import type { IfNotAny } from "./";
 
 /**
  * Test a type again `unknown`

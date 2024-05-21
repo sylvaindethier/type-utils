@@ -1,4 +1,4 @@
-import type { IfNotNumber } from "./index";
+import type { IfNotNumber } from "./";
 
 /**
  * Test a `number` to be literal

@@ -1,4 +1,4 @@
-import type { If } from "../If";
+import type { If } from "./";
 
 /**
  * Logical AND operator
@@ -14,8 +14,3 @@ export type AND<X extends boolean, Y extends boolean, Error = never> = If<
   If<Y, false, false, Error>,
   Error
 >;
-
-/**
- * {@link AND}
- */
-export type { AND as PRODUCT };

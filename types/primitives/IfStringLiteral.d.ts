@@ -1,4 +1,4 @@
-import type { IfNotString } from "./IfString";
+import type { IfNotString } from "./";
 
 /**
  * Test a `string` to be literal

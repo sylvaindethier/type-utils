@@ -1,4 +1,4 @@
-import type { IfAny, IfNever } from "./index";
+import type { IfAny, IfNever } from "./";
 
 /**
  * Test a type against `any` or `never`

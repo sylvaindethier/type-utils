@@ -1,4 +1,4 @@
-import type { IfNotSymbol } from "./IfSymbol";
+import type { IfNotSymbol } from "./";
 
 /**
  * Test a `symbol` to be literal

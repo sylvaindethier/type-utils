@@ -9,6 +9,7 @@
     "ecma",
     "github",
     "linebreak",
+    "NAND",
     "Parens",
     "postbuild",
     "tsdoc",

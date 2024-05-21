@@ -1,4 +1,4 @@
-import type { If } from "../If";
+import type { If } from "./";
 
 /**
  * Logical NOT operator

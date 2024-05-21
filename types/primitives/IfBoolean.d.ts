@@ -1,5 +1,5 @@
 export type * from "./IfBooleanLiteral";
-import type { IfNotAnyOrNever } from "./index";
+import type { IfNotAnyOrNever } from "./";
 
 /**
  * Test a type against `boolean`

@@ -1,4 +1,4 @@
-import type { If } from "../If";
+import type { If } from "./";
 
 /**
  * Logical OR operator
@@ -14,8 +14,3 @@ export type OR<X extends boolean, Y extends boolean, Error = never> = If<
   If<Y, true, false, Error>,
   Error
 >;
-
-/**
- * {@link OR}
- */
-export type { OR as SUM };
