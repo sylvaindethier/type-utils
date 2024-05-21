@@ -1,5 +1,5 @@
 import { expectTypeOf } from "vitest";
-import type { IfSymbolLiteral as ImportType } from "#types/primitives";
+import type { IfSymbolLiteral as ImportType } from "#types/index";
 type TestType<V extends symbol> = ImportType<V, Then, Else>;
 
 // Prevents false positive, and true negative

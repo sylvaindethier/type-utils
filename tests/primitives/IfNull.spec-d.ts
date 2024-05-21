@@ -1,5 +1,5 @@
 import { expectTypeOf } from "vitest";
-import type { IfNull as ImportType } from "#types/primitives";
+import type { IfNull as ImportType } from "#types/index";
 type TestType<T> = ImportType<T, Then, Else>;
 
 // Prevents false positive, and true negative

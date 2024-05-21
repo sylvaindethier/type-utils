@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { expectTypeOf } from "vitest";
-import type { IfNumberLiteral_Not as ImportType } from "#types/primitives";
+import type { IfNumberLiteral_Not as ImportType } from "#types/index";
 type TestType<V extends number> = ImportType<V, Then, Else>;
 
 // Prevents false positive, and true negative

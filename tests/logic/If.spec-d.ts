@@ -1,5 +1,5 @@
 import { expectTypeOf } from "vitest";
-import type { If as ImportType } from "#types/logic";
+import type { If as ImportType } from "#types/index";
 type TestType<B extends boolean> = ImportType<B, Then, Else, ERROR>;
 
 // Prevents false positive, true negative, and error

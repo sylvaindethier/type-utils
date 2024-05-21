@@ -1,5 +1,5 @@
 import { expectTypeOf } from "vitest";
-import type { NOT as ImportType } from "#types/logic/operators";
+import type { NOT as ImportType } from "#types/index";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 type TestType<X extends boolean, _Y> = ImportType<X, ERROR>;
 

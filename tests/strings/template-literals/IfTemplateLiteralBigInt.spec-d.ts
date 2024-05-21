@@ -1,5 +1,5 @@
 import { expectTypeOf } from "vitest";
-import type { IfTemplateLiteralBigInt as ImportType } from "#types/strings";
+import type { IfTemplateLiteralBigInt as ImportType } from "#types/index";
 type TestType<S extends string> = ImportType<S, Then, Else>;
 
 // Prevents false positive, and true negative

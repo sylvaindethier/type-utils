@@ -1,5 +1,5 @@
 import { expectTypeOf } from "vitest";
-import type { IfBooleanLiteral as ImportType } from "#types/primitives";
+import type { IfBooleanLiteral as ImportType } from "#types/index";
 type TestType<V extends boolean> = ImportType<V, Then, Else>;
 
 // Prevents false positive, and true negative

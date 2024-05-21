@@ -1,5 +1,5 @@
 import { expectTypeOf } from "vitest";
-import type { EQV as ImportType } from "#types/logic/operators";
+import type { EQV as ImportType } from "#types/index";
 type TestType<X extends boolean, Y extends boolean> = ImportType<X, Y, ERROR>;
 
 // Prevents false boolean (`any` | `never`)

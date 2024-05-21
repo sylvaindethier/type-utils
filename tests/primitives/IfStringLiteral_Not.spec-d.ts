@@ -1,5 +1,5 @@
 import { expectTypeOf } from "vitest";
-import type { IfStringLiteral_Not as ImportType } from "#types/primitives";
+import type { IfStringLiteral_Not as ImportType } from "#types/index";
 type TestType<V extends string> = ImportType<V, Then, Else>;
 
 // Prevents false positive, and true negative
