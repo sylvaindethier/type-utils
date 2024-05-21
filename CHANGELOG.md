@@ -1,5 +1,11 @@
 # @sdt/typescript-utils
 
+## 0.4.0
+
+### Minor Changes
+
+- e1fe5ab: Add logic & operators, string template literals, utils
+
 ## 0.3.0
 
 ### Minor Changes
